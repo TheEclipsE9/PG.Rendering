@@ -4,7 +4,9 @@ class Program
 {
     static void Main()
     {
-        using var game = new MyGame();
-        game.Run();
+        using (MyGame game = new MyGame())
+        {
+            game.Run();
+        }
     }
 }
